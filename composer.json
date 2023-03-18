@@ -1,0 +1,38 @@
+{
+    "name": "nhn/boilerplate",
+    "description": ":package_description",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [{
+        "name": "Author Name",
+        "email": "author@email.com",
+        "homepage": "http://author.com"
+    }],
+    "homepage": "https://github.com/nhn/boilerplate",
+    "keywords": ["Laravel", "Boilerplate"],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nhn\\Boilerplate\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nhn\\Boilerplate\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nhn\\Boilerplate\\BoilerplateServiceProvider"
+            ],
+            "aliases": {
+                "Boilerplate": "Nhn\\Boilerplate\\Facades\\Boilerplate"
+            }
+        }
+    }
+}
